@@ -1,0 +1,1 @@
+f(t) = sin3t + 0.8 sin 10t  for t in range [0,10]
