@@ -1,12 +1,10 @@
-f(t) = sin3t + 0.8 sin 10t  for t in range [0,10]
-
----------
+#Haar-Transformation für Array[4]
 
 import numpy
 from math import *
 
 N = 4
-s = [5,1,2,8]
+s=[5,1,2,8]
 
 #for k in range(N):
 #    print(s[k])
