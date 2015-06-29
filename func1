@@ -36,8 +36,8 @@ def discreteHaarWaveletTransform(x):
 import numpy
 from math import *
 
-N = 16
-s = [25.9375,11.0,-4.0,-9.0,-4.625,4.5,-1.75,2.0,3.6875,-3.0,3.75,4.5,-5.0,-0.5,-3.75,3.0]
+N = 4
+s = [5,1,2,8]
 
 #for k in range(N):
 #    print(s[k])
@@ -46,20 +46,8 @@ print(s)
 
 import matplotlib.pyplot as plt
 plt.plot(s)
-plt.axis([0, 16, -10, 20])
+plt.axis([0, 3, -10, 20])
 plt.show()
-
-def fun1(ax):
-    ax.plot(range(5))
-
-def fun2(ax):
-    ax.plot(range(5)[::-1])
-
-
-fig, ax = plt.subplots(1, 1)
-
-fun1(ax)
-fun2(ax)
 
 plt.draw()
 
@@ -83,17 +71,6 @@ def discreteHaarWaveletTransform(x):
         x = output[:length << 1]
 
         length >>= 1
-
-
-s = discreteHaarWaveletTransform(s)
-
-for k in range(N):
-    print (s[k])
-    
-import matplotlib.pyplot as plt
-plt.plot(s)
-plt.axis([0, 10, -4, 13])
-plt.show()
 
 
 s = discreteHaarWaveletTransform(s)
