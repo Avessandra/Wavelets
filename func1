@@ -11,10 +11,10 @@ s=[5,1,2,8]
 
 print(s)
 
-import matplotlib.pyplot as plt
-plt.plot(s)
-plt.axis([0, 3, -10, 20])
-plt.show()
+#import matplotlib.pyplot as plt
+#plt.plot(s)
+#plt.axis([0, 3, -10, 20])
+#plt.show()
 
 plt.draw()
 
@@ -48,26 +48,3 @@ for k in range(N):
 #Inverse Formel?:
 N = 4
 s = [4.0,-1.0,2.0,-3.0]
-
-def InverseFunc(x):
-    N = len(x)
-    output = [0.0]*N
-    length = N
-    M = 1
-    while True:
-        for i in range(0, int(M)):
-            revAvg = (x[i*2] + x[i*2+1])
-            revDiff = (x[i*2] - x[i*2+1])
-            output[i] = revAvg
-            output[int(length/2) + i] = revDiff
-            
-        if M == N:
-            return output
-        
-        x = output[int(length)]
-        M == M*2
-        
-InverseFunc(s)
-
-for k in range(N):
-    print (s[k])
