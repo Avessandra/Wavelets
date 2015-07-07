@@ -11,10 +11,10 @@ s=[5,1,2,8]
 
 print(s)
 
-#import matplotlib.pyplot as plt
-#plt.plot(s)
-#plt.axis([0, 3, -10, 20])
-#plt.show()
+import matplotlib.pyplot as plt
+plt.plot(s)
+plt.axis([0, N, min(s), max(s)])
+plt.show()
 
 plt.draw()
 
@@ -44,3 +44,9 @@ s = discreteHaarWaveletTransform(s)
 
 for k in range(N):
     print (s[k])
+    
+plt.plot(s)
+plt.axis([0, N, min(s), max(s)])
+plt.show()
+
+plt.draw()
