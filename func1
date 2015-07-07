@@ -44,7 +44,3 @@ s = discreteHaarWaveletTransform(s)
 
 for k in range(N):
     print (s[k])
-
-#Inverse Formel?:
-N = 4
-s = [4.0,-1.0,2.0,-3.0]
